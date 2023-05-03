@@ -1,15 +1,26 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 const imageList = document.querySelector('.gallery');
-const imageListItem = createGalleryImageList(galleryItems);
+const imagesListItem = createGalleryImagesList(galleryItems);
 
-imageList.addEventListener('click', onImageListClick)
+imageList.insertAdjacentHTML('beforeend', imagesListItem);
+imageList.addEventListener('click', onImageLClick)
 
-function onImageListClick(event) {
-    console.log(event.target);
-}
-
-
-
-
+function onImageClick(items) {
+    return items
+        .map(({ preview, original, description }) => {
+        return `<div class="gallery__item">
+  <a class="gallery__link" href="${original}">
+    <img
+      class="gallery__image"
+      src="${preview}"
+      data-source="${original}"
+      alt="${description}"
+    />
+  </a>
+</div>`;
+    })
+    .join('');
+} 
+    
 console.log(galleryItems);
