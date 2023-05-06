@@ -30,7 +30,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.main-link {
+/* .main-link {
   margin-bottom: 20px;
   text-decoration: none;
 
@@ -39,7 +39,7 @@ ul {
 
   border: 0;
   outline: 0;
-  border-radius: 320px;
+  border-radius: 120px;
 
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
@@ -52,12 +52,12 @@ ul {
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-}
+} */
 
-.main-link:hover {
+/* .main-link:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 
 .main-link:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
-}
+} */
